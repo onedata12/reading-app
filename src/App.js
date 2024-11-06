@@ -165,6 +165,9 @@ const ReadingGame = () => {
 
   return (
     <div className="flex flex-col items-center gap-6 p-4">
+      <h1 className="text-4xl font-bold text-gray-800 mb-4">
+        독서 타이머
+      </h1>
       <Card className="w-full max-w-md">
         <CardContent className="pt-6">
           <div className="flex flex-col items-center gap-6">
@@ -212,7 +215,7 @@ const ReadingGame = () => {
               </div>
               <Button 
                 onClick={toggleReading}
-                className={`w-48 ${isReading ? 'bg-red-500 hover:bg-red-600' : ''}`}
+                className={`w-48 ${isReading ? 'bg-orange-300 hover:bg-orange-400' : ''}`}
               >
                 {isReading ? '독서 종료' : '독서 시작'}
               </Button>
@@ -261,6 +264,33 @@ const ReadingGame = () => {
                   ))
                 }
               </div>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* 여기에 새로운 레벨 프리뷰 카드 추가 */}
+      <Card className="w-full max-w-md mt-4">
+        <CardContent className="pt-6">
+          <h2 className="text-lg font-bold mb-4 text-center">레벨별 펭귄 모습</h2>
+          <div className="flex flex-wrap justify-center gap-8">
+            <div className="text-center">
+              <div className="transform scale-50">
+                <PenguinCharacter level={1} />
+              </div>
+              <p className="text-sm text-gray-600">Level 1-4<br/>기본 펭귄</p>
+            </div>
+            <div className="text-center">
+              <div className="transform scale-50">
+                <PenguinCharacter level={5} />
+              </div>
+              <p className="text-sm text-gray-600">Level 5-9<br/>안경 쓴 펭귄</p>
+            </div>
+            <div className="text-center">
+              <div className="transform scale-50">
+                <PenguinCharacter level={10} />
+              </div>
+              <p className="text-sm text-gray-600">Level 10+<br/>학사모 쓴 펭귄</p>
             </div>
           </div>
         </CardContent>
