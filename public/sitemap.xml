@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://reading-app-three.vercel.app/</loc>
+    <xhtml:link 
+      rel="alternate"
+      hreflang="en"
+      href="https://reading-app-three.vercel.app/en"/>
+    <xhtml:link 
+      rel="alternate"
+      hreflang="ko"
+      href="https://reading-app-three.vercel.app/"/>
+    <lastmod>2024-03-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>https://reading-app-three.vercel.app/en</loc>
+    <xhtml:link 
+      rel="alternate"
+      hreflang="ko"
+      href="https://reading-app-three.vercel.app/"/>
+    <xhtml:link 
+      rel="alternate"
+      hreflang="en"
+      href="https://reading-app-three.vercel.app/en"/>
+    <lastmod>2024-03-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
